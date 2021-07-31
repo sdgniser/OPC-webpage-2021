@@ -1,0 +1,52 @@
+{
+  "name": "gulp4-pug-scss-ts-template",
+  "version": "1.0.0",
+  "description": "Template for static website generation",
+  "dependencies": {
+    "browser-sync": "^2.26.12",
+    "fs": "^0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-css": "^0.1.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uncss": "^1.0.6",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5",
+    "typescript-register": "^1.1.0",
+    "typescript-require": "^0.2.10"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.12",
+    "gulp-htmlhint": "^3.0.1",
+    "gulp-prettify": "^0.5.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-util": "^3.0.8",
+    "kind-of": "^6.0.3",
+    "minimist": "^1.2.5",
+    "node-sass-package-importer": "^5.3.2",
+    "normalize.css": "^8.0.1"
+  },
+  "scripts": {
+    "serve": "gulp",
+    "build": "gulp build && cd dist && tar -cvzf pretty.tar.gz pretty && tar -cvzf mini.tar.gz mini "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishek-deshmukh/gulp4-pug-scss-ts-template.git"
+  },
+  "author": "Abhishek Anil Deshmukh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abhishek-deshmukh/gulp4-pug-scss-ts-template/issues"
+  },
+  "homepage": "https://github.com/abhishek-deshmukh/gulp4-pug-scss-ts-template#readme",
+  "browserslist": [
+    "last 2 version"
+  ]
+}
