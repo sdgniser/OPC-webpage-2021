@@ -18,7 +18,31 @@ block append body
         | the landing page for NISER's outreach Commitee but also lots of exciting
         | prizes.
 
-      a(href="https://forms.gle/atkGPVwCCRNC3YCV8" target="__blank").btn.btn-primary.btn-lg.px-4.mb-5 Participate
+      a(href="https://forms.gle/atkGPVwCCRNC3YCV8" target="__blank").btn.btn-primary.btn-lg.px-4.mb-5.disabled Participate
+
+      hr.col-3.col-md-2.mb-5
+
+      h2#result Winners - 2021
+
+      table.table.table-striped
+        thead
+          th Place
+          th Name
+          th Prize
+        tr
+          td 1st
+          td Aritra Mukhopadhyay
+          td Raspberry Pi 3 Model B+, SoC, IoT, PoE Enabled SBC
+        tr
+          td 2nd
+          td Shriman Keshri
+          td Extra-Extra-Large Mouse pad (Black)
+        tr
+          td 3rd
+          td Rahul Vishwakarma
+          td 50 Cool Laptop stickers (Linux, Programming etc.)
+
+      a(href="https://sdgniser.github.io/OPC-2021-submissions/") Here are all the submissions of OPC-2021
 
       hr.col-3.col-md-2.mb-5
 
@@ -152,6 +176,7 @@ block append body
             li A link to the GitHub/GitLab repo where the source files are
             li A .tar.gz file containing the final production build.
             li The time lapse video.
+
         .col-md-6
           h2#Schedule Schedule
           table.table.table-striped
