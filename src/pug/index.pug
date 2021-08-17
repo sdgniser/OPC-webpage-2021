@@ -1,9 +1,180 @@
 extends include/_base
-mixin row-centered-12
-        block
 
 block title
-  title Outreach Page competition | Coding Club
+  title Outreach Page Competition | Coding Club
 
 block append body
-  h1 Outreach Page competition
+  .col-lg-8.mx-auto.p-3.py-md-3
+    header.d-flex.flex-column.align-items-center.border-bottom.mb-5#header
+      img(src="./static/cc_logo.png" style="width: 30px;").mx-3
+      span Coding Club- NISER
+      span.ms-auto.text-muted Powered by School of Computer Sciences
+
+    main
+      h1 Outreach Page Competition - OPC
+      p.col-md-8(style="font-size: 1.25rem;") An opportunity to showcase your web
+        |
+        | development skills and not only win the opportunity to set your page as
+        | the landing page for NISER's outreach Commitee but also lots of exciting
+        | prizes.
+
+      a(href="https://forms.gle/atkGPVwCCRNC3YCV8" target="__blank").btn.btn-primary.btn-lg.px-4.mb-5 Participate
+
+      hr.col-3.col-md-2.mb-5
+
+      .row.g-5.mb-5
+        .col-md-6
+          h2#Prizes Exciting Prizes
+
+          p All* the submitted webpages will be uploaded for showcase. First
+            |
+            |prize holder's page will be used as the official outreach landing
+            |page.
+
+
+          table.table.table-striped
+            thead
+              th Place
+              th Prizes
+            tr
+              td 1st
+              td Raspberry Pi 3 Model B+, SoC, IoT, PoE Enabled SBC
+            tr
+              td 2nd
+              td Extra-Extra-Large Mouse pad (Black)
+            tr
+              td 3rd
+              td 50 Cool Laptop stickers (Linux, Programming etc.)
+        .col-md-6
+          h2#Judging-Criteria Judging Criteria
+          p Judges will take the following points under consideration, starting
+            |
+            | from the most important to the least important.
+          ol
+            li “Getting the point across” -ness.
+            li Responsiveness (We want it working on phones, tablets, and desktops)
+            li Aesthetics
+            li Creativity/Originality
+            li Color Scheme
+            li Load time
+            li Performance
+            li S.E.O
+
+      hr.col-3.col-md-2.mb-5
+
+      h2#Page-Details Page Details
+      p The page is supposed to be a landing page for the NISER outreach program.
+      p Following content has to be on the page:
+      ol.list-group
+        li.list-group-item
+          b Empty links to:
+          ul
+            li Open day
+            li Educational visits of schools
+            li Teacher-training workshop: Vigyan Prathiba project
+        li.list-group-item
+          b About us
+          p Science outreach is all about communicating the importance and
+            |
+            | ideologies of Science with the public. The general idea is to spread
+            | Science among the school students and teachers in a captivating way
+            | which will be encouraging enough for them to think about a future in
+            | research or education.
+          p NISER is mindful of its social responsibilities and has been reaching
+            |
+            | out to students and teachers to motivate them in their Scientific
+            | pursuit.
+        li.list-group-item
+          b Our vision
+          p We believe that an exposure at the right time in one's career can
+            |
+            | ignite right minds in learning and their scientific pursuit. With this
+            | in mind we invite teachers and students to have a glimpse of the
+            | research environment at NISER and expose them to the concept of
+            | "Learning by doing". NISER outreach activities provide a single window
+            | for facilities such as online and offline education from school to
+            | undergraduate level, research programs, online portal for various
+            | learning units for schools, online teachers' webinars, online and
+            | on-site teachers' workshops etc.
+          p NISER Open day program is introduced to invite people from various
+            |
+            | institutions/ schools can to visit NISER in order to have a glimpse of
+            | the scientific exposure along with learning. NISER Educational trips
+            | involve schools and college visits in different departments at NISER
+            | and interact with the Scientific officers. NISER hosts the Odisha
+            | chapter of the Vigyan Pratibha project in collaboration with Institute
+            | of Physics, Bhubaneswar and Homi Bhabha Centre for Science Education
+            | (please check the full form), Mumbai and wherein teachers' training
+            | workshops are being conducted.
+        li.list-group-item
+          b An event calendar
+        li.list-group-item
+          b A section for News and announcements
+        li.list-group-item
+          b Gallery section
+        li.list-group-item
+          b NISER logo
+      p You are allowed to use whatever technologies you want but the page has to
+        |
+        | be static.The final assets that you submit can ONLY consist of the
+        | following languages:
+      ul
+        li HTML
+        li CSS
+        li Javascript
+      p Web assembly is <b>NOT</b> allowed.
+
+      hr.col-3.col-md-2.mb-5
+
+      .row.g-5.mb-5
+        .col-md-6
+          h2#Submission Submission
+
+          p For the purposes of keeping the competition fair and having cool
+            |
+            |videos to show once the competition is done, participants have to
+            |make a time-lapse of you designing and coding the whole page out, if
+            |the time-lapse is not provided, your entry will be <b>disqualified</b>.
+
+          p If you are using CSS frameworks like bootstrap or tailwind, or
+            |
+            | javascript frameworks like Vue or react then mention them in your
+            | readme. All these external frameworks have to be imported from
+            |
+            a(href="https://unpkg.com/" target="__blank") unpkg
+            | . These will be considered only for tie-breaking, giving the
+            | participant which used fewer imports the advantage.
+
+          p Submissions have to be emailed to us by replying to the invitation
+            |
+            | mail. The mail should contain the following:
+          ul
+            li A link to the GitHub/GitLab repo where the source files are
+            li A .tar.gz file containing the final production build.
+            li The time lapse video.
+        .col-md-6
+          h2#Schedule Schedule
+          table.table.table-striped
+            thead
+              tr
+                th Event
+                th Date time
+            tbody
+              tr
+                td Participation form closes
+                td 2359hrs, 5th August 2021
+              tr
+                td Submission deadline
+                td 2359hrs, 8th August 2021
+              tr
+                td Results
+                td 15th August 2021
+
+          h2#Eligibility Eligibility
+          p Be a student of NISER during the academic year 2021-22.
+      p.muted-text *Terms and Conditions apply
+
+    footer.border-top.my-3.pt-2.text-muted#footer
+      span &copy; 2021
+      img(src="./static/cc_logo.png" style="width: 30px;").mx-3
+      span Coding Club | National Institute of Science Education and Research
